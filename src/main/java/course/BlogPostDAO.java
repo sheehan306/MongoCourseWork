@@ -27,7 +27,7 @@ public class BlogPostDAO {
     public Document findByPermalink(String permalink) {
 
         // XXX HW 3.2,  Work Here
-        Document post = postsCollection.find(Filters.eq("title", permalink)).first();
+        Document post = postsCollection.find(Filters.eq("permalink", permalink)).first();
         return post;
     }
 
